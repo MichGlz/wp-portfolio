@@ -1,0 +1,71 @@
+# Ignore everything in the root except the "wp-content" directory
+/*
+!.gitignore
+!wp-content/
+
+# Ignore everything in the "wp-content" directory except the following:
+wp-content/*
+!wp-content/themes/
+!wp-content/plugins/
+
+# Ignore everything in the themes directory except michtheme
+wp-content/themes/*
+!wp-content/themes/michtheme/
+
+# Ignore everything in the plugins directory except custom-blocks
+wp-content/plugins/*
+!wp-content/plugins/custom-blocks/
+
+# Ignore specific files and directories in the child theme and plugin
+wp-content/themes/michtheme/node_modules/
+wp-content/themes/michtheme/vendor/
+wp-content/themes/michtheme/build/
+wp-content/themes/michtheme/.env
+wp-content/themes/michtheme/.DS_Store
+wp-content/themes/michtheme/*.log
+wp-content/themes/michtheme/output.css
+
+wp-content/plugins/custom-blocks/node_modules/
+wp-content/plugins/custom-blocks/vendor/
+wp-content/plugins/custom-blocks/build/
+wp-content/plugins/custom-blocks/.env
+wp-content/plugins/custom-blocks/.DS_Store
+wp-content/plugins/custom-blocks/*.log
+wp-content/plugins/custom-blocks/output.css
+
+# Ignore WordPress core files
+wp-admin/
+wp-includes/
+
+# Ignore WordPress uploads
+wp-content/uploads/
+
+# Ignore WordPress configuration files
+wp-config.php
+wp-config-sample.php
+
+# Ignore other common files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.sass-cache
+
+# Ignore Composer dependencies
+vendor/
+
+# Ignore npm/yarn dependencies
+node_modules/
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore IDE and editor specific files
+.idea/
+.vscode/
+*.code-workspace
